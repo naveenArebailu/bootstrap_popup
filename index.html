@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            div{
+                margin-top: 10px;
+            }
+            button {
+                margin-top: 50px;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+       <div>
+           <h3>Popover Example</h3>
+           <button id="popover1" name="popover" data-placement="top" data-toggle="popover" data-content="Default popover" title="First popover" style="background-color:#008CBA">Popover</button>
+           <button id="popover2" name="popover" data-placement="top" data-toggle="popover" data-content="Another popover" title="Second popover" style="background-color:#4CAF50">Another Popover</button>
+           <button id="popover3" name="popover" data-placement="top" data-toggle="popover" data-content="Large popover with max contents with max width of bootstrap" title="Third popover" style="background-color:#2ad9ed">Large Popover</button>
+           <button id="popover4" name="popover" data-placement="top" data-toggle="popover" data-content="Last popover!" title="Fourth popover" style="background-color:#efb523">Last Popover</button>
+       </div>
+       <script>
+            $(document).ready(function(){
+            $('[data-toggle="popover"]').popover(); 
+        });
+</script>
+    </body>
+</html>
